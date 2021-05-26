@@ -1,0 +1,12 @@
+{
+  "name": "16-codeWars2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "Vytautas",
+  "license": "MIT"
+}
