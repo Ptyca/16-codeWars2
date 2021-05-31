@@ -1,16 +1,11 @@
+function reverse(string){
+  return string.split(' ').reverse().join(' ');
+}
 
-      String.prototype.toAlternatingCase = function () {
-        
-    }
-   
-   test('toAlternatingCase', () => {
-   
-         expect("hello world".toAlternatingCase()).toBe("HELLO WORLD");
-         expect("HELLO WORLD".toAlternatingCase()).toBe("hello world");
-         expect("hello WORLD".toAlternatingCase()).toBe("HELLO world");
-         expect("HeLLo WoRLD".toAlternatingCase()).toBe("hEllO wOrld");
-         expect("12345".toAlternatingCase()).toBe("12345");
-         expect("1a2b3c4d5e".toAlternatingCase()).toBe("1A2B3C4D5E");
-         expect("String.prototype.toAlternatingCase".toAlternatingCase()).toBe("sTRING.PROTOTYPE.TOaLTERNATINGcASE");
-         expect("Hello World".toAlternatingCase().toAlternatingCase()).toBe("Hello World");
-       });
+test('reverse', () => {
+expect(reverse('I am an expert at this')).toBe('this at expert an am I');
+expect(reverse('This is so easy')).toBe('easy so is This');
+expect(reverse('no one cares')).toBe('cares one no');
+expect(reverse('')).toBe('');
+expect(reverse('CodeWars')).toBe('CodeWars');
+});
